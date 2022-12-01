@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>WORDSCAPES SEARCH</title>
+     <link rel="shortcut icon" href="../pictures/favicon.png" type="image/x-icon">
+     <style>
+          @import url(https://fonts.googleapis.com/css?family=Ropa+Sans:regular,italic);
+          @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic);
+          *{
+               margin: 0px;
+          }
+          body{
+               background-color: #E0E2DB;
+          }
+          .main{
+               height: 80vh;
+               display: flex;
+               align-items: center;
+               justify-content: space-around;
+               font-family: 'Ropa Sans';
+          }
+          .main-block{
+               background-color: white;
+               /* border: 2px dotted black; */
+               display: flex;
+               flex-direction: column;
+               margin: 25px;
+               padding-top: 25px;
+               box-sizing: border-box;
+               box-shadow: 1px 1px 20px 5px black;
+               padding-left: 50px;
+               padding-bottom: 20px;
+               border-radius: 10px;
+          }
+          .main-block form{
+               display: flex;
+               margin-top: 40px;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+          }
+          .main-block form button{
+               width: 56px;
+               padding: 5px 2px;
+               font-family: 'Roboto Mono';
+               background-color: #C6D4FF;
+               border: 1px solid #1BF0E9;
+               border-radius: 5px;
+          }
+          button:hover{
+               background-color: #1BF0E9;
+               cursor: pointer;
+          }
+          .input{
+               margin-top: 20px;
+               width: 252px;
+               display: flex;
+               align-items: center;
+          }
+          .input input{
+               height: 15px;
+               margin-left: 5px;
+               width: 100px;
+          }
+          nav{
+               display: flex;
+               align-items: center;
+               padding: 0px 25px;
+               height: 66px;
+               background-color: white;
+               border-bottom: 3px solid orangered;
+          }
+          nav ul{
+               list-style: none;
+          }
+          .image {
+               height: 137px;
+          }
+     </style>
+</head>
+<body>
+     <nav>
+          <ul>
+               <li>
+                    <image class="image" src="../pictures/logo.png"></image>
+               </li>
+          </ul>
+     </nav>
+     
+     <div class="main">
+          <div>
+               <h1>Some Instructions : </h1>
+               <ul>
+                    <li><h2>Upload a photo of the grid</h2></li>
+                    <li><h2>Make sure the image quality is good</h2></li>
+                    <li><h2>Enter the words seperated by space in the input box</h2></li>
+                    <li><h2>Make sure the words only contains english alphabets not any special character</h2></li>
+               </ul>
+          </div>
+          <div class="main-block">
+               <h1>UPLOAD PHOTO</h1>
+               <form action="/upload" method="post" enctype="multipart/form-data">
+                    <input type="file" name="test" src="" alt="" required>
+                    <br>
+                    <div class="input">
+                         <p> Enter word : </p>
+                         <input type="text" name="text" id="text" required>
+                    </div>
+                    <br>
+                    <button type="submit">Submit</button>
+               </form>
+          </div>
+     </div>
+
+     <!-- <textarea name="maze" id="maze" cols="30" rows="10"> -->
+     
+     <!-- </textarea> -->
+</body>
+</html>

@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css" type="text/css">
+     <link rel="shortcut icon" href="../pictures/favicon.png" type="image/x-icon">
+     <title>WORDSCAPES SEARCH</title>
+     
+     <style>
+          @import url(https://fonts.googleapis.com/css?family=Rubik+Glitch:regular);
+          *{
+               margin: 0px;
+          }
+          body{
+               background-color: #E0E2DB;
+          }
+          .green{
+               background-color: chocolate;
+               padding: 2px;
+               border-radius: 5px;
+               font-family: fantasy;
+          }
+          .black{
+               padding: 2px
+          }
+          .main{
+               display: flex;
+               height: 89vh;
+               align-items: center;
+               justify-content: center;
+               flex-direction: column;
+               /* margin: 10px 10px 10px 10px; */
+          }
+          .main-block{
+               background-color: white;
+               /* border: 2px solid black; */
+               height: 300px;
+               width: 320px;
+               font-size: 20px;
+               box-sizing: border-box;
+               box-shadow: 2px 2px 15px 2px black;
+               border-radius: 15px;
+               padding: 25px;
+               padding-top: 33px;
+               padding-bottom: 15px;
+          }
+          .not-found{
+               font-family: 'Rubik Glitch',cursive;
+               font-size: 25px;
+          }
+          #fit{
+               font-family: 'Courier New', Courier, monospace;
+          }
+          nav{
+               display: flex;
+               align-items: center;
+               padding: 0px 25px;
+               height: 66px;
+               background-color: white;
+               border-bottom: 3px solid orangered;
+          }
+          nav ul{
+               list-style: none;
+          }
+          .image {
+               height: 137px;
+          }
+          </style>
+          
+</head>
+<body>
+     <nav>
+          <ul>
+               <li>
+                    <image class="image" src="../pictures/logo.png"></image>
+               </li>
+          </ul>
+     </nav>
+     <% let len=obj.maze.length; let f=obj.word.length; let coordinates=obj.coordinates; let myMap={}
+          coordinates.forEach((e)=>{
+          let arr = new Array(2);
+          arr[0] = e[0];
+          arr[1] = e[1];
+          console.log(arr);
+          myMap[arr] = true;
+          let fl = coordinates.length == 0 ? true : false;
+          })
+          %>
+          <div class="main">
+               <% if(coordinates.length==0){ %>
+                    <div class="not-found">
+                         <h2>NOT FOUND</h2>
+                    </div>
+               <% } %>
+          <div class="main-block">
+               
+               <% for(let i=0;i<len;i++){ for(let j=0;j<obj.maze[i].length;j++){ 
+                    let color='black' ; 
+                    if(myMap[[i, j]]){
+                         color='green' ;
+                    } %>
+                    <p class=<%=color%> id="fit" style=" display:inline ;" > <%= obj.maze[i][j] %>
+                    </p>
+                    <% } %>
+                         <br>
+               <% } %>
+     
+          </div>
+          </div>
+</body>
+</html>
