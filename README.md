@@ -3,7 +3,7 @@
 
 <li> Click the photo of the grid/crossword (make sure image quality is good)
   
-><li> This will work correctly on squre grid.
+><li> This will work correctly on square grid.
 <li> Enter the words in the text box seperated by space(make sure input format is coorect).
 <li> Hit Submit.
   
