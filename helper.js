@@ -44,5 +44,9 @@ function fun(text) {
     obj = Matrix.M(arr);
     return arr;
 }
+var seperate = (words)=>{
+    var arr = words.split(" ");
 
-module.exports = {fun,obj :new Matrix()};
+    return arr;
+}
+module.exports = {fun,obj :new Matrix(),seperate};
