@@ -18,6 +18,5 @@
   <h2> Some ScreenShots of the application are shown below: </h2>
   
   
-  ![Screenshot 2022-12-03 004742](https://user-images.githubusercontent.com/100745680/205368994-75378be3-8095-4a60-899f-f51ac08dd6b8.png)
-
-![Screenshot 2022-12-03 002556](https://user-images.githubusercontent.com/100745680/205368847-5a81c779-7b50-4112-a492-19a9e12cf6f1.png)
+![Screenshot 2022-12-03 183519](https://user-images.githubusercontent.com/77826715/205442344-3245ac31-bb27-441f-84d7-fec5f4116ef3.png)
+![Screenshot 2022-12-03 183546](https://user-images.githubusercontent.com/77826715/205442347-8d2728df-dcaf-49cc-9fd9-4f1bd913b969.png)
