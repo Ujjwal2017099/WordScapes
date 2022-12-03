@@ -38,8 +38,7 @@ app.post('/upload',upload.single('test'),(req,res)=>{
                maze = help.fun(text);
                console.log(maze);
                const word = req.body.text;
-               let words = [];
-               words.push(word);
+               let words = help.seperate(word);
                coordinates = find(maze,words);
          })
          .finally(()=>{
