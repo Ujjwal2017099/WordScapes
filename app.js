@@ -51,7 +51,7 @@ app.post('/upload',upload.single('test'),(req,res)=>{
          })
 })
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT,()=>{
      console.log(`listning on port ${PORT}`);
      console.log(`go to localhost:${PORT} on browser`);
