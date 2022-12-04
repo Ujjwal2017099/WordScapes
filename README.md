@@ -6,7 +6,7 @@
 
 2.Clone the project repo on you system by either downloading the code or by using git clone
 
-3.Run ```npm install``` after opening the terminal in the project folder and then run ```npm start``` and go to the rerquired domain(localhost) in your browser.
+3.Run ```npm install``` after opening the terminal in the project folder and then run ```npm start``` and go to the required domain(localhost:5000) in your browser.
 
 4.Select the photo of the grid/crossword (make sure image quality is good)   
 >This will work correctly on square grid.
