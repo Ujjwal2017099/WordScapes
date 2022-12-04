@@ -52,8 +52,7 @@ app.post('/upload',upload.single('test'),(req,res)=>{
 })
 
 const PORT = 5000;
-const HOSTNAME = "0.0.0.0";
-app.listen(PORT,HOSTNAME,()=>{
+app.listen(PORT,()=>{
      console.log(`listning on port ${PORT}`);
-     console.log(`go to https://${HOSTNAME}:${PORT} on browser`);
+     console.log(`go to localhost:${PORT} on browser`);
 })
